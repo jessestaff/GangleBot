@@ -3,11 +3,15 @@ const Discord = require("discord.js");
 
 const bot = new Discord.Client();
 
+
+//bot turning on code
 bot.on("ready", async () => {
 console.log(`ayyyy`)
 bot.user.setActivity('From Above', { type: 'WATCHING' })
 });
 
+
+//commands for messages
 bot.on("message", async message => {
     if(message.author.bot) return
 
@@ -17,11 +21,12 @@ bot.on("message", async message => {
     let args = messageArray.slice(1);
 
 
+    //simple hello command
     if(cmd === `${prefix}hello`){
         return message.channel.send("Do not speak to me Mortal.")
     }
 
-    
+
 });
 
 
