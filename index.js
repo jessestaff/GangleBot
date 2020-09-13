@@ -59,6 +59,13 @@ bot.on("message", async message => {
         return message.channel.send("https://tenor.com/view/youtooz-pokimane-piss-gif-18076546")
     }
 
+
+    //shut up baby command
+    if(cmd == `${prefix}shutup`) {
+     message.channel.send("https://media.discordapp.net/attachments/663940133728419885/736844992710180894/image3.gif")
+     message.channel.send("shut the fuck up!!!!!!!!!")
+    }
+
 });
 
 
