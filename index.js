@@ -54,6 +54,10 @@ bot.on("message", async message => {
         i = 9999;
     }
 
+    if(cmd == `${prefix}piss`){
+        return message.channel.send("https://tenor.com/view/youtooz-pokimane-piss-gif-18076546")
+    }
+
 });
 
 
