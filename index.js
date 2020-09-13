@@ -26,6 +26,7 @@ bot.on("message", async message => {
         return message.channel.send("Do not speak to me Mortal.")
     }
 
+    //start timer command
     if(cmd === `${prefix}start`){
         start = false;
         second = 0;
@@ -46,6 +47,7 @@ bot.on("message", async message => {
     }
 
 
+    //end timer command
     if(cmd === `${prefix}stopt`){
         message.channel.send(second + "seconds")
         second = 0;
