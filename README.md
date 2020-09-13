@@ -7,5 +7,5 @@ Welcome to the gangle bot repo! this is just a fun bot we work on
 
 you can run this using nodejs/discord.js by opening the index.js file
 
-> **Dependencies:** Discord.js, Window 
+> **Dependencies:** Discord.js
 
