@@ -49,7 +49,7 @@ bot.on("message", async message => {
 
     //end timer command
     if(cmd === `${prefix}stopt`){
-        message.channel.send(second + "seconds")
+        message.channel.send(second + " seconds")
         second = 0;
         i = 9999;
     }
