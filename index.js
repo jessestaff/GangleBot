@@ -1,5 +1,7 @@
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
+const Window = require('window');
+const window = new Window();
 
 const bot = new Discord.Client();
 
