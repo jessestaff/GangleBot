@@ -1,7 +1,5 @@
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
-const Window = require('window');
-const window = new Window();
 
 const bot = new Discord.Client();
 
@@ -28,6 +26,31 @@ bot.on("message", async message => {
         return message.channel.send("Do not speak to me Mortal.")
     }
 
+    if(cmd === `${prefix}start`){
+        start = false;
+        second = 0;
+        i = 1; 
+
+        function myLoop() { 
+          setTimeout(function() {
+            second = second + 1;
+            i++;  
+            if (i < 10000) {     
+              myLoop();             
+            }                       
+          }, 1000)
+        }
+        
+        myLoop(); 
+          message.channel.send("started")
+    }
+
+
+    if(cmd === `${prefix}stopt`){
+        message.channel.send(second + "seconds")
+        second = 0;
+        i = 9999;
+    }
 
 });
 
